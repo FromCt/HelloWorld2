@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/rg_order_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <RadioButton
+            android:id="@+id/rb_mySelfOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/order_selector"
+            android:text="我的订单"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/order_text_color_selector"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_myPartnerOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/order_selector"
+            android:text="协同伙伴订单"
+            android:textColor="@drawable/order_text_color_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+    <RelativeLayout
+        android:id="@+id/rl_myOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        >
+
+        <EditText
+            android:id="@+id/myorder_searchEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/combin_search_background1"
+            android:hint="请输入商品名称搜索"
+            android:paddingLeft="20dip"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/ico_ck2" />
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_myPartnerOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:background="#eee">
+
+            <Button
+                android:id="@+id/choose_condation"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="商品名称▼"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_cicle_gray"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/partnerOrder_searchEdit"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="50dip"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/choose_condation"
+                android:layout_toEndOf="@+id/choose_condation"
+                android:background="@drawable/combin_search_background1"
+                android:hint="请输入关键字搜索"
+                android:paddingLeft="20dip"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/srh_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/ico_ck2" />
+
+        </RelativeLayout>
+
+    <com.crunii.android.fxpt.view.AppleListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/noneView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noneImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ico_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noneImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="您还没有相关订单\n暂无相关数据"
+            android:textColor="#9e9e9e"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.crunii.android.fxpt.activity.MainViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+</LinearLayout>

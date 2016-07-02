@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3">
+
+    <include layout="@layout/default_head2" />
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/head"
+        android:background="#f1eff0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="协同伙伴"
+            android:textColor="#000" />
+        <ImageView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:onClick="doDel"
+            android:padding="5dp"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:background="#fffff7">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#eee"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="伙伴手机："
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:inputType="number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36dp"
+                        android:background="@null"
+                        android:hint="请输入伙伴手机号"
+                        android:textColor="#fda24a"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="验证码："
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/code"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:hint="请输入验证码"
+                        android:textColor="#fda24a"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:onClick="doGetCode"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/btn_blue_bg"
+                        android:text="获取验证码"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/next_step"
+                        android:onClick="nextStep"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:text="下    一    步"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#eee"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="信息确认"
+                        android:textColor="#333"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+                <LinearLayout
+                    android:id="@+id/ll_"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="伙伴姓名："
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36dp"
+                        android:background="@null"
+                        android:hint="请输入伙伴姓名"
+                        android:textColor="#fda24a"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:text="渠道类别："
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/select_down"
+                        android:onClick="doChoose"
+                        android:text="渠道类别"
+                        android:textColor="#333"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:id="@+id/ll_power_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="酬金分配控制"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/commissionControl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分销伙伴拿全额酬金"
+                            android:textColor="#333"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/btnPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分销伙伴拿 99% 酬金"
+                            android:textColor="#333"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我拿全额酬金"
+                            android:textColor="#333"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:onClick="saveMsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:text="保  存  信  息"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

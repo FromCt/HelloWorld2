@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/default_head2" />
+    <TextView
+        android:id="@+id/title"
+        android:text="title"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:layout_height="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        ></LinearLayout>
+
+    <!--<WebView-->
+    <!--android:id="@+id/wv_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/toolbar"-->
+    <!--></WebView>-->
+    <com.crunii.android.fxpt.view.MyWebView
+        android:id="@+id/wv_main_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

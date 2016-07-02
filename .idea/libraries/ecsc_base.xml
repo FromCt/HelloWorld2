@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ecsc-base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ecsc-base.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

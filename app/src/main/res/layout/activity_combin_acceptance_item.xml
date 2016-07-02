@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/combin_accept_name"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            style="@style/CombindAcceptance"
+            android:gravity="center_horizontal"
+            android:text="姓名"
+            android:textSize="16sp"
+            android:textColor="#A8A8A8"
+            android:layout_weight="1"
+             />
+
+        <TextView
+            android:id="@+id/combin_accept_salePlace"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            style="@style/CombindAcceptance"
+            android:gravity="center_horizontal"
+            android:text="所属销售点"
+            android:textSize="16sp"
+            android:textColor="#A8A8A8"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/combin_accept_CRM"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            style="@style/CombindAcceptance"
+            android:gravity="center_horizontal"
+            android:text="CRM工号"
+            android:textSize="16sp"
+            android:textColor="#A8A8A8"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/combin_accept_handle"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/background_cicle_blue"
+            style="@style/CombindAcceptance"
+            android:gravity="center"
+            android:text="由他受理"
+            android:textSize="16sp"
+            android:layout_height="fill_parent"
+            android:textColor="#F9F9F9"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

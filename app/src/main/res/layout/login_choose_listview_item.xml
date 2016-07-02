@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/login_choose_listview_item_background1"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="销售员姓名"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_name"
+            android:background="@color/white"
+            android:textColor="@color/login_choose_listview_content"
+            android:text="@string/create_calendar_title"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="CRM工号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_crm"
+            android:text="@string/create_calendar_title"
+            android:textColor="@color/login_choose_listview_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="归属销售点"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_sale_point"
+            android:background="@color/white"
+            android:textColor="@color/login_choose_listview_content"
+            android:text="@string/create_calendar_title"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="归属经营主体"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_master"
+            android:background="@color/white"
+            android:textColor="@color/login_choose_listview_content"
+            android:text="@string/create_calendar_title"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="归属支局"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_branch"
+            android:background="@color/white"
+            android:textColor="@color/login_choose_listview_content"
+            android:text="@string/create_calendar_title"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="渠道属性"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_attribute"
+            android:background="@color/white"
+            android:textColor="@color/login_choose_listview_content"
+            android:text="@string/create_calendar_title"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="渠道类别"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lcli_category"
+            android:background="@color/white"
+            android:text="@string/create_calendar_title"
+            android:textColor="@color/login_choose_listview_content"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/login_choose_listview_item_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:background="#6BBFF6"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="操作"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/lcli_choose"
+                android:padding="2dp"
+                android:background="@drawable/login_choose_listview_button_selector"
+                android:text="选择"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

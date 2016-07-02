@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10px"
+    android:background="@color/seashell"
+    >
+
+ 	<LinearLayout android:layout_height="wrap_content" 
+ 	android:id="@+id/linearLayout1" 
+ 	android:layout_width="wrap_content"  	
+ 	android:layout_marginTop="5dp">
+ 	<ImageView android:layout_height="wrap_content" 
+ 	android:layout_width="wrap_content" 
+ 	android:src="@drawable/reader" 
+ 	android:id="@+id/imageView1" 
+ 	android:layout_alignParentTop="true" 
+ 	android:layout_alignParentLeft="true">
+ 	</ImageView>
+   
+ 		<TextView android:id="@+id/tvAbout" 
+ 		
+ 		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content" 
+ 		android:layout_marginLeft="50dp"
+ 		android:textAppearance="?android:attr/textAppearanceLarge" 
+ 		android:text="关      于">
+ 		</TextView>
+ 	</LinearLayout>
+    
+    
+	<LinearLayout android:layout_height="5dp" 
+	android:id="@+id/ll_about_head" 
+	android:layout_width="fill_parent"
+	
+
+	android:background="@color/yellow"
+	android:orientation="vertical" 
+	android:layout_below="@+id/linearLayout1">
+		 
+	</LinearLayout> 
+	
+
+  
+  <!-- corpration -->
+    <LinearLayout android:id="@+id/ll_corp" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"   
+    android:orientation="vertical"
+    android:layout_marginTop="10dip"
+    android:layout_below="@+id/ll_about_head">
+ 		
+        <TextView android:id="@+id/tvCorp" 
+        android:layout_width="wrap_content" 
+        android:text="公司名称:山东信通电子股份有限公司" 
+        android:layout_height="wrap_content" 
+        android:textSize="20dp"
+        android:layout_weight="1" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- mail -->
+    <LinearLayout android:id="@+id/ll_mail" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+   	android:layout_marginTop="10dip"
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_corp">
+        
+        <TextView android:id="@+id/tvMail" 
+        android:layout_width="wrap_content" 
+        android:text="邮        箱:senter@senter.com.cn" 
+        android:textSize="20dp"
+        android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- website-->
+    <LinearLayout android:id="@+id/ll_web" 
+    android:layout_marginTop="10dip"
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_mail">
+        <TextView android:id="@+id/tvWeb" 
+        android:layout_width="wrap_content" 
+        android:text="网        址:www.senter.com.cn" 
+        android:textSize="20dp"
+        android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- telephone -->
+    <LinearLayout android:id="@+id/ll_tel" 
+    android:layout_marginTop="10dip"
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_web">
+        <TextView android:id="@+id/tvTel" 
+        android:layout_width="wrap_content" 
+        android:text="电        话:86-0533-3588123" 
+        android:textSize="20dp"
+        android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+    <!-- soft ver -->
+    <LinearLayout android:id="@+id/ll_soft_ver" 
+    android:layout_marginTop="10dip"
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_tel">
+        <TextView android:id="@+id/tvSoftVer" 
+        android:layout_width="wrap_content" 
+        android:text="软件版本:" 
+        android:textSize="20dp"
+        android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+ <LinearLayout android:id="@+id/llSoftVerjar" 
+    android:layout_marginTop="10dip"
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@+id/ll_soft_ver">
+        <TextView android:id="@+id/tvSoftVerjar" 
+        android:layout_width="wrap_content" 
+        android:text="支撑库版本:" 
+        android:textSize="20dp"
+        android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>    
+    
+</RelativeLayout>
+	 
+

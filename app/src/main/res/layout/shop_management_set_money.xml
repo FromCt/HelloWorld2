@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_head1" />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/cttextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可优惠区间："/>
+
+        <TextView
+            android:id="@+id/smsm_money"
+            android:textSize="16sp"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/cttextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/cttextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠金额："/>
+
+        <EditText
+            android:layout_marginRight="80dip"
+            android:id="@+id/smsm_setMoney"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_width="match_parent"
+            android:textColor="@color/cttextColor"
+            android:hint=""
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/cttextColor"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示："/>
+
+    <TextView
+        android:id="@+id/tishiTextview"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="16sp"
+        android:textColor="@color/cttextColor"
+        android:gravity=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       优惠金额从您的终端利润中扣减，即终端返利的实际金额=“终端返利”-“优惠金额”。"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/smsm_store"
+            android:layout_margin="10dip"
+            android:layout_width="80dip"
+            android:background="@drawable/shop_management_button_selsector"
+            android:layout_height="40dip"
+            android:text="保存"/>
+
+        <Button
+            android:id="@+id/smsm_cancel"
+            android:layout_margin="10dip"
+            android:background="@drawable/shop_management_button_selsector"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:text="取消"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

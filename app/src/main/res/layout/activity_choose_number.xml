@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true" >
+
+    <include layout="@layout/default_head2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head"
+        android:background="#fff"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/btn_area"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_bg"
+                android:onClick="showAreaList"
+                android:text="主城六区"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+            
+            <Button
+                android:id="@+id/btn_section"
+                android:layout_toRightOf="@+id/btn_area"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/select_bg"
+                android:onClick="showSectionList"
+                android:text="全部"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+            
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:onClick="doSearch"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_red_bg"
+                android:text="搜索"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            
+            <EditText 
+                android:id="@+id/query"
+                android:layout_toRightOf="@+id/btn_section"
+                android:layout_toLeftOf="@+id/btn_search"
+                android:hint="自定义号码"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:inputType="phone"
+                android:background="@drawable/rect_bg"/>
+            
+        </RelativeLayout>
+        
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1eff0" >
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="号码"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/prepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:text="预存话费"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.crunii.android.fxpt.view.AppleListViewReverseFooter
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

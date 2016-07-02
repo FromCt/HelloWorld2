@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:padding="6dip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/combinGoods_imageView"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:background="#F3F3F3"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/combinGoods_goodsName"
+        android:layout_alignTop="@id/combinGoods_imageView"
+        android:layout_toRightOf="@id/combinGoods_imageView"
+        style="@style/CombindGoodsStyle"
+        android:textColor="#626262"
+         />
+
+    <ImageView
+        android:id="@+id/combinGoods_buy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:background="@color/transparent"
+        android:layout_alignBottom="@id/combinGoods_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/combin_buy1_background"/>
+
+    <TextView
+        android:layout_marginRight="2dip"
+        android:id="@+id/combinGoods_goodsPrice"
+        android:layout_toLeftOf="@id/combinGoods_buy"
+        android:layout_toRightOf="@id/combinGoods_imageView"
+        android:layout_alignBottom="@id/combinGoods_imageView"
+        android:layout_marginBottom="2dip"
+        style="@style/CombindGoodsStyle"
+        android:textColor="@color/speed_register_title_below"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/combin_goods_listview_layout"
+        android:orientation="vertical"
+        android:layout_below="@id/combinGoods_imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

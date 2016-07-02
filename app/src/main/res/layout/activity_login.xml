@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="280dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/arc_btn_bg"
+            android:drawableLeft="@drawable/login_user"
+            android:hint="请输入您的手机号"
+            android:inputType="phone"
+            android:textColor="#666"
+            android:textColorHint="#aaa"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_yzm"
+            android:layout_width="280dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/ed_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="170dp"
+                android:layout_height="42dp"
+                android:background="@drawable/arc_btn_bg"
+                android:drawableLeft="@drawable/login_yzm"
+                android:hint="请输入验证码"
+                android:inputType="phone"
+                android:textColor="#666"
+                android:textColorHint="#aaa"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_yzm"
+                android:layout_width="105dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ed_password"
+                android:background="@drawable/login_hq"
+                android:onClick="doSend"
+                android:text="获取验证码"
+                android:textColor="#2c8ec3"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="280dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/ll_yzm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_btn"
+            android:onClick="doLogin"
+            android:text="登        录"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_submit"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="公  告"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tv_title"
+                    android:text="       根据市公司渠道协同工作的统一规划以及渠道视图3.0的相关要求，电商分销平台已实现分公司实体、直销、电子三大渠道CRM揽收人绑定的手机号登录平台发展业务。请原电子渠道揽收人被注销的分销商通过本人实体或直销渠道CRM揽收人手机号进行登录。"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_content"
+                    android:text=""
+                    android:textColor="#FF7F00" />
+                <!--
+                电子渠道运营中心\n2016年01月12日
+                -->
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

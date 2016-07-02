@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/level2view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#eee"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/close_account"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_blue_bg"
+                android:text="注销账号"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/level1view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:orientation="vertical"
+        android:padding="1dp" >
+        <RelativeLayout 
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dp">
+            <TextView 
+                android:id="@+id/infotext"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_centerVertical="true"
+        		android:layout_marginLeft="10dp"
+        		android:text="协同伙伴信息"
+        		android:textColor="#333"/>
+            
+            <Button 
+                android:id="@+id/search_partner"
+                android:layout_toRightOf="@+id/infotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ico_ck2"/>
+            
+            <TextView 
+                android:id="@+id/title"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+        		android:text=""
+        		android:textColor="#333"/>
+            
+            <Button
+                android:id="@+id/add_partner"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_blue_bg"
+                android:text="增加新伙伴"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        
+        <com.crunii.android.fxpt.view.AppleListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+        
+    </LinearLayout>
+</RelativeLayout>

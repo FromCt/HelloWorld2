@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_head1" />
+
+    <RelativeLayout
+        android:id="@+id/head2"
+        android:layout_below="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/shop_fragment_textStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/packagetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看网店二维码"
+
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/shopManagementLine">
+
+    </LinearLayout>
+
+    <RadioGroup
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        style="@style/shop_fragment_textStyle"
+        android:gravity="center"
+        android:button="@null"
+        android:checked="true"
+        android:text="网店待选商品区"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        style="@style/shop_fragment_textStyle"
+        android:gravity="center"
+        android:button="@null"
+        android:text="网店已选商品区"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent" />
+
+
+</RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fsm_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <ImageView
+            android:id="@+id/smv1_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_up"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

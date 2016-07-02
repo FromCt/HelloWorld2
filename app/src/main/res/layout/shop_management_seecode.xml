@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_head1" />
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/cttextColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的网店活动链接"/>
+
+    <EditText
+        android:id="@+id/sms_shopUrl"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_width="match_parent"
+        android:textColor="@color/cttextColor"
+        android:hint="http://"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/smsButton"
+        android:layout_margin="10dip"
+        android:layout_width="match_parent"
+        android:background="@drawable/shop_management_button_selsector"
+        android:layout_height="40dip"
+        android:text="店铺短信分享"/>
+
+    <Button
+        android:id="@+id/askSet"
+        android:layout_margin="10dip"
+        android:background="@drawable/shop_management_button_selsector"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:text="我问问设置"/>
+
+    <TextView
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/cttextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的店铺二维码：" />
+
+    <ImageView
+        android:id="@+id/sms_img"
+        android:layout_margin="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+    >
+
+
+    <include layout="@layout/default_head2"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:padding="15dip"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/combin_serachEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="50dip"
+            android:background="@drawable/combin_search_background1"
+            android:hint="请输入关键字搜索"
+            android:paddingLeft="20dip"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/combin_serachButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="@id/combin_serachEdit"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/combin_serachEdit"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/transparent"
+            android:src="@drawable/combin_search_background2"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/combinGoods_listVIew"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dip">
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="请选择身份证识别方式"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/dialog_bg"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_choose_read_card_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lightgrey"
+        >
+        <RadioButton
+            android:id="@+id/upload_image"
+            android:button="@null"
+            android:text="证件照上传"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+           android:background="@drawable/background_gray_select"
+            />
+
+        <RadioButton
+            android:id="@+id/cdyws_read"
+            android:button="@null"
+            android:text="成都因纳伟盛"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/background_gray_select"
+            />
+
+        <RadioButton
+            android:id="@+id/sdxt_read"
+            android:button="@null"
+            android:text="山东信通"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/background_gray_select"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/commit"
+        android:visibility="gone"
+        android:text="确    认"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/dialog_bg"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        />
+
+
+</LinearLayout>

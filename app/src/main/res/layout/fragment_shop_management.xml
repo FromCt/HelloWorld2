@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f3f3"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_head1" />
+
+    <RelativeLayout
+        android:id="@+id/head2"
+        android:layout_below="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/packageLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="150dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/packagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="查看网店二维码"
+                android:textColor="#444444" />
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/packagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ck"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/shopManagementLine">
+
+    </LinearLayout>
+
+    <RadioGroup
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <RadioButton
+        android:textSize="15sp"
+        android:id="@+id/radioButton1"
+        android:textColor="#444444"
+        android:gravity="center"
+        android:button="@null"
+        android:checked="true"
+        android:background="@drawable/sm_dx_button_selector"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent" />
+
+    <RadioButton
+        android:textColor="#444444"
+        android:id="@+id/radioButton2"
+        android:gravity="center"
+        android:button="@null"
+        android:textSize="15sp"
+        android:background="@drawable/sm_yx_button_selector"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent" />
+
+
+</RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.crunii.android.fxpt.activity.MainViewPager
+            android:id="@+id/fsm_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.crunii.android.fxpt.activity.MainViewPager>
+
+
+        <ImageView
+            android:id="@+id/smv1_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/up"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

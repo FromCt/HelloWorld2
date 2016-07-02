@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_head2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/button_red"
+                android:gravity="center"
+                android:text="信息登记"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="客户姓名"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="客户手机"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <TextView
+                     android:layout_width="80dp"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical"
+                     android:gravity="center_vertical"
+                     android:text="客户地址"
+                     android:textColor="#333"
+                     android:textSize="16sp"/>
+
+                 <TextView
+                     android:id="@+id/address"
+                     android:layout_width="fill_parent"
+                     android:layout_height="match_parent"
+                     android:layout_margin="5dp"
+                     android:background="@drawable/background_cicle_gray_duck_light"
+                     android:drawableLeft="@drawable/edit_left"
+                     android:gravity="center_vertical"
+                     android:textColor="@color/orange"
+                     android:textSize="16sp"/>
+             </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="意向需求"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/intention"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="left|top"
+                    android:text=""
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="到店优惠"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shopDiscount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="left|top"
+                    android:textColor="@color/button_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="派单时间"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="派单人"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/receiver_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_yhjcontent"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:text="随销人员已发送优惠码给用户，可享指定到店优惠。请确认优惠，并在办理业务之后回填优惠码。"
+                 android:textSize="13sp"
+                 />
+           </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_label_state"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="订单状态"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/tv_label_state"
+                    android:background="@drawable/background_cicle_gray_duck_light"
+                    android:drawableLeft="@drawable/edit_left"
+                    android:gravity="center_vertical"
+                    android:hint="请选择处理状态"
+                    android:inputType="number"
+                    android:onClick="doSelect"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/arrow_down" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_accept_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:id="@+id/yhj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                   >
+                     <LinearLayout
+                         android:layout_width="80dp"
+                         android:layout_height="match_parent"
+                         android:orientation="horizontal"
+                         >
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="center_vertical"
+                             android:gravity="center_vertical"
+                             android:text="优惠码"
+                             android:textColor="#333"
+                             android:textSize="16sp" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="center_vertical"
+                             android:gravity="center_vertical"
+                             android:text="(选填)"
+                             android:textColor="@color/red"
+                             android:textSize="12sp" />
+
+                     </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/et_yhj"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:hint="请填写优惠码"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+                       <TextView
+                           android:id="@+id/tv_prove"
+                           android:onClick="yhjProve"
+                           android:clickable="true"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="[验证]"
+                           android:layout_gravity="center_vertical"
+                           android:textColor="@color/red"
+                            android:textSize="18sp"
+                           />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_accept_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_accept_type"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="订单类型"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/sp_accept_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@+id/tv_accept_type"
+                        android:background="@drawable/background_cicle_gray_duck_light">
+
+                    </Spinner>
+
+                    <!-- <Button
+                         android:id="@+id/btn_accept_type"
+                         android:layout_toRightOf="@+id/tv_accept_type"
+                         android:layout_width="fill_parent"
+                         android:layout_height="match_parent"
+                         android:layout_margin="5dp"
+                         android:background="@drawable/background_cicle_gray_duck_light"
+                         android:drawableLeft="@drawable/edit_left"
+                         android:gravity="center_vertical"
+                         android:hint="请选择订单类型"
+                         android:inputType="number"
+                         android:onClick="doSelect"
+                         android:textColor="@color/black"
+                         android:textSize="16sp"/>-->
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/arrow_down" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/crm_accept_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="CRM订单号"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_crm_accept_id"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:hint="请填写以823开头的15位CRM订单号"
+                        android:inputType="number"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+                     <ImageView
+                         android:id="@+id/xinghao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xinghao"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/combo_moeny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="业务酬金"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_combo_moeny"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/xinghao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xinghao"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/goods_moeny"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="终端返利"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_goods_moeny"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/xinghao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xinghao"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/terminal_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="终端类型"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_terminal_type"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/xinghao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xinghao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_deal_seller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="处理人"
+                        android:textColor="#333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/deal_seller"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_cicle_gray_duck_light"
+                        android:drawableLeft="@drawable/edit_left"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_yellow_bg"
+                    android:onClick="doSubmit"
+                    android:text="确        认"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bt_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_yellow_bg"
+                    android:onClick="doCancle"
+                    android:text="取        消"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

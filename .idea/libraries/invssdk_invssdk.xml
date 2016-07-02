@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="invssdk.invssdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/invssdk/invssdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

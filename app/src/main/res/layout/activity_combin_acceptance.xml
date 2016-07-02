@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F3F3F3"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/default_head2"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:padding="15dip"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/combin_serachEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="60dip"
+            android:background="@drawable/combin_search_background1"
+            android:hint="请输入销售人员姓名"
+            android:paddingLeft="20dip"
+            android:textSize="18sp"
+            />
+
+        <ImageButton
+            android:id="@+id/combin_serachButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/combin_serachEdit"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/transparent"
+            android:src="@drawable/combin_search_background2"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
+
+        <TextView
+            style="@style/CombindAcceptance"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="姓名"
+            />
+
+        <TextView
+            style="@style/CombindAcceptance"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="所属销售点"
+            />
+
+        <TextView
+            style="@style/CombindAcceptance"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="CRM工号"
+            />
+
+        <TextView
+            style="@style/CombindAcceptance"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="操作"
+            />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/combin_accept_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip"></ListView>
+
+
+</LinearLayout>

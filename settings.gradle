@@ -1,0 +1,1 @@
+include ':app', ':invssdk', ':jackson-all-1.7.6', ':senter0727s1'

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/rg_order_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <RadioButton
+            android:text="我的订单"
+            android:id="@+id/rb_mySelfOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/order_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/order_text_color_selector"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:text="分销伙伴订单"
+            android:id="@+id/rb_myPartnerOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/order_selector"
+            android:button="@null"
+            android:textColor="@drawable/order_text_color_selector"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_myOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        >
+        <Button
+            android:id="@+id/choose_condation"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="最近三个月订单▼"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_cicle_gray"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/ico_ck2" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_myPartnerOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:background="#eee">
+
+        <Button
+            android:id="@+id/bt_year"
+            android:onClick="doYear"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/select_bg"
+            android:text="2015"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/bt_year"
+            android:text="年"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_mouth"
+            android:onClick="doMouth"
+            android:layout_width="50dp"
+            android:layout_height="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:background="@drawable/select_bg"
+            android:text="01"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="月"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/bt_mouth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="分销伙伴："
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/bt_choose_partner" />
+        <Button
+            android:id="@+id/bt_choose_partner"
+            android:onClick="doAll"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_cicle_gray"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="全部▼"
+            />
+
+    </RelativeLayout>
+    <com.crunii.android.fxpt.view.AppleListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+    <RelativeLayout
+        android:id="@+id/noneView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noneImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ico_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noneImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="您还没有相关订单\n暂无相关数据"
+            android:textColor="#9e9e9e"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

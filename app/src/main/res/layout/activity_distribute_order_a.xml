@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_state_background_style"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:text="＋商机派发"/>
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bt_send"
+            android:textColor="@color/mediumseagreen"
+            android:text="派发单信息查询"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <EditText
+            android:id="@+id/et_serach"
+            android:drawableLeft="@drawable/edit_left"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:hint="请输入客户姓名或电话号码查询"
+            android:textColorHint="@color/lightgray"
+            android:textSize="16sp"
+            android:background="@drawable/background_cicle_gray_duck_light"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_alignParentRight="true"
+            android:text="查      询"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/button_state_background_style"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_divider"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"
+        android:orientation="horizontal"
+        />
+
+
+    <com.crunii.android.fxpt.view.PullDownView
+        android:id="@+id/distributeListView"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/rl_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.crunii.android.fxpt.view.PullDownView>
+
+</RelativeLayout>

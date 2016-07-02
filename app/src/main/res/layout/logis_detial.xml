@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ImageButton
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/logis_dt_ibutton"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/return2"
+        android:scaleType="fitXY"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/logis_dt_ibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/logis_dt_ibutton"
+        android:textColor="@color/textColor"
+        android:text="物流详情"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dip"
+        android:id="@+id/logis_dt_f1real"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/logis_dt_ibutton"
+        android:background="#ECECEC"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dip"
+            android:id="@+id/logis_dt_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+             />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_toRightOf="@id/logis_dt_image"
+            android:id="@+id/logis_dt_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="物流状态：取最近的物流状态"
+            android:textSize="16sp"  />
+
+
+        <TextView
+            android:layout_marginBottom="5dip"
+            android:layout_above="@id/logis_dt_state"
+            android:layout_alignLeft="@id/logis_dt_state"
+            android:id="@+id/logis_dt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单编号：XXXXXXXXXXXXX"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginBottom="5dip"
+            android:layout_alignLeft="@id/logis_dt_state"
+            android:layout_above="@id/logis_dt_id"
+            android:id="@+id/logis_dt_compName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流公司名称"
+            android:textColor="@color/textColor"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/logis_dt_f1real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物流消息："
+        android:textColor="@color/textColor"
+        android:id="@+id/logis_dt_message"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/logis_dt_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:id="@+id/logis_dt_f1message">
+
+                <ImageView
+                    android:background="@color/transparent"
+                    android:id="@+id/logis_dt_f1image"
+                    android:src="@drawable/wuliu1"
+                    android:layout_width="40dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/logis_dt_f1image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="展示最新的一条物流状态"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/logis_dt_lastmess"
+                    android:textSize="16sp"  />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/logis_dt_f1image"
+                    android:layout_alignLeft="@id/logis_dt_lastmess"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="2012-12-12"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/logis_dt_lastmess"
+                    android:id="@+id/logis_dt_lasttime"
+                    android:textSize="14sp"  />
+
+                <LinearLayout
+                    android:layout_alignBottom="@id/logis_dt_lasttime"
+                    android:layout_alignLeft="@id/logis_dt_lasttime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#bcbcbc">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@id/logis_dt_f1message"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                android:id="@+id/logis_dt_f2message">
+
+                <ImageView
+                    android:background="@color/transparent"
+                    android:src="@drawable/wuliu2"
+                    android:id="@+id/logis_dt_f2image"
+                    android:layout_width="40dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/logis_dt_f2image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="展示倒数第二条物流状态"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/logis_dt_f2mess"
+                    android:textSize="16sp"  />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/logis_dt_f2image"
+                    android:layout_alignLeft="@id/logis_dt_f2mess"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="2012-12-12"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/logis_dt_f2mess"
+                    android:id="@+id/logis_dt_f2time"
+                    android:textSize="14sp"  />
+
+                <LinearLayout
+                    android:layout_alignBottom="@id/logis_dt_f2time"
+                    android:layout_alignLeft="@id/logis_dt_f2time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#bcbcbc">
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/logis_dt_f2message"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                android:id="@+id/logis_dt_f3message">
+
+                <ImageView
+                    android:background="@color/transparent"
+                    android:src="@drawable/wuliu2"
+                    android:id="@+id/logis_dt_f3image"
+                    android:layout_width="40dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/logis_dt_f3image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="展示倒数第三条物流状态"
+                    android:id="@+id/logis_dt_f3mess"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/logis_dt_f3image"
+                    android:layout_alignLeft="@id/logis_dt_f3mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2012-12-12"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/logis_dt_f3mess"
+                    android:id="@+id/logis_dt_f3time"
+                    android:textSize="14sp"  />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--自定义小点形状    未选中时 --> 
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+    <!--自定义小点宽高  -->    
+	<size android:height="7dp"
+	    android:width="7dp"/>
+	<!--自定义小点颜色  灰色  --> 
+	<solid android:color="#AFFA4B3C"/>
+</shape>

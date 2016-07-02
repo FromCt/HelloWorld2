@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:onClick="doItemClick"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#f0f0f0" >
+
+        <TextView
+            android:id="@+id/lb_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="订单编号："
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lb_orderId"
+            android:layout_toEndOf="@+id/lb_orderId" />
+
+        <ImageView
+            android:id="@+id/orderCancel"
+            android:onClick="doOrderCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_sc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/lb_orderState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="订单状态："
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/statusDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#f00"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lb_orderState"
+            android:layout_toEndOf="@+id/lb_orderState" />
+
+        <TextView
+            android:id="@+id/lb_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="支付金额："
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/statusDesc"
+            android:layout_toEndOf="@+id/statusDesc" />
+
+        <TextView
+            android:id="@+id/pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="null"
+            android:textColor="#f00"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lb_pay_amount"
+            android:layout_toEndOf="@+id/lb_pay_amount" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/lb_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="商品名称："
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15px"
+            android:text=""
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lb_goods_name"
+            android:layout_toEndOf="@+id/lb_goods_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/lb_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="下单时间："
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lb_create_time"
+            android:layout_toEndOf="@+id/lb_create_time" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#f7f7f7" >
+
+        <TextView
+            android:id="@+id/od_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#333"
+            android:text="null"
+            android:textSize="14sp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/sellerName"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:layout_marginLeft="10dp"
+            android:text="null"
+            android:textSize="14sp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/orderPay"
+            android:onClick="doOrderPay"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="付  款"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="@drawable/btn_red_bg"/>
+        <Button
+            android:id="@+id/orderRefund"
+            android:onClick="doOrderRefund"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="申请退款"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="@drawable/btn_red_bg"/>
+        <Button
+            android:id="@+id/orderReturn"
+            android:onClick="doOrderReturn"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="申请退货"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="@drawable/btn_red_bg"/>
+        <Button
+            android:id="@+id/orderConfirm"
+            android:onClick="doOrderConfirm"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="确认收货"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:background="@drawable/btn_red_bg"/>
+    </RelativeLayout>
+
+</LinearLayout>
