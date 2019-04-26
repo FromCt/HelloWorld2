@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    <!--指定选中 与否所对应的图片  -->
-    <item android:drawable="@drawable/point_shape" android:state_enabled="false"/>
-    <item android:drawable="@drawable/point_pitch" android:state_enabled="true"/>
-
-</selector>

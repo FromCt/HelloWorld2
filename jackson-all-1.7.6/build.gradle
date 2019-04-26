@@ -1,2 +1,0 @@
-configurations.create("default")
-artifacts.add("default", file('jackson-all-1.7.6.jar'))
